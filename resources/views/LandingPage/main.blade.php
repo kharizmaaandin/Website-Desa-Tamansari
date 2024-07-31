@@ -126,7 +126,7 @@
             <div class="item item-1">
                 <div class="header-text">
                     <span class="category">Tamansari, <em>Kerjo</em></span>
-                    <h2><br>Get the Best Villa for you</h2>
+                    <h2><br>Web Desa Tamansari</h2>
                 </div>
             </div>
             <div class="item item-2">

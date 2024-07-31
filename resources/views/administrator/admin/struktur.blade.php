@@ -7,7 +7,7 @@
     <link rel="apple-touch-icon" sizes="76x76" href="LandingPage/images/logo/logoSroyo.png">
     <link rel="icon" type="image/png" href="LandingPage/images/logo/logoSroyo.png">
     <title>
-        Administrasi Sroyo
+        Administrasi Tamansari
     </title>
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -45,7 +45,7 @@
             <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
             <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/argon-dashboard/pages/dashboard.html " target="_blank">
                 <img src="LandingPage/images/logo/logoSroyo.png" class="navbar-brand-img h-100" alt="main_logo">
-                <span class="ms-1 font-weight-bold">Sroyo Dashboard</span>
+                <span class="ms-1 font-weight-bold">Tamansari Dashboard</span>
             </a>
         </div>
         <hr class="horizontal dark mt-0">
@@ -164,7 +164,7 @@
                 <div class="col-12">
                     <div class="card mb-4">
                         <div class="card-header pb-0">
-                            <h6>Struktur Perangkat Desa Sroyo</h6>
+                            <h6>Struktur Perangkat Desa Tamansari</h6>
                             <button data-bs-toggle="modal" data-bs-target="#formAddStruktur" style="border: none;" id="tambahLayanan" style="">Tambah</button>
                         </div>
                         <div class="card-body px-0 pt-0 pb-2" style="height: 500px;overflow-y: auto;">
