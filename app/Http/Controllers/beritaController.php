@@ -107,7 +107,7 @@ class beritaController extends Controller
 
     public function hapus_berita($id){
         $hapus_berita = berita::where("id",'=',$id)->delete();
-        if($hapus_berita){
+        if($hapus_berita  === true){
             return back()->with("success_toast","berhasil menghapus berita");
         }else{
             return back()->with("error_toast","tidak bisa menghapus berita");

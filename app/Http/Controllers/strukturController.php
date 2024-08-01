@@ -144,7 +144,7 @@ class strukturController extends Controller
         if(!$cekKadus){
             $hapus_struktur = struktur::where("id",'=',$id)->delete();
 
-            if($hapus_struktur){
+            if($hapus_struktur === true ){
                 return back()->with("success_toast","berhasil menghapus struktur");
             }else{
                 return back()->with("error_toast","gagal menghapus struktur");

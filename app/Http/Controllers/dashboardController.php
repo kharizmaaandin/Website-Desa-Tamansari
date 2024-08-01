@@ -93,7 +93,7 @@ class dashboardController extends Controller
 
         $hapus = jabatan::where("id",'=',$id)->delete();
 
-        if($hapus){
+        if($hapus  === true){
             return back()->with('success_toast', 'Jabatan berhasil dihapus!');
         }else{
             return back()->with(["error_toast" => "jabatan gagal dihapus"]);

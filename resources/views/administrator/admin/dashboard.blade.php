@@ -46,8 +46,8 @@
     <aside class="sidenav bg-white navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-4 " id="sidenav-main">
         <div class="sidenav-header">
             <i class="fas fa-times p-3 cursor-pointer text-secondary opacity-5 position-absolute end-0 top-0 d-none d-xl-none" aria-hidden="true" id="iconSidenav"></i>
-            <a class="navbar-brand m-0" href=" https://demos.creative-tim.com/argon-dashboard/pages/dashboard.html " target="_blank">
-                <img src="LandingPage/images/logo/logoSroyo.png" class="navbar-brand-img h-100" alt="main_logo">
+            <a class="navbar-brand m-0" href="" target="_blank">
+                <img src="LandingPage/assets/images/logo-tamansari.png" class="navbar-brand-img h-100" alt="main_logo">
                 <span class="ms-1 font-weight-bold">Tamansari Dashboard</span>
             </a>
         </div>
@@ -86,14 +86,14 @@
                         <span class="nav-link-text ms-1">Informasi Dusun</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a class="nav-link " href="/berita_desa">
                         <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
                             <i class="ni ni-world-2 text-danger text-sm opacity-10"></i>
                         </div>
                         <span class="nav-link-text ms-1">Berita</span>
                     </a>
-                </li>
+                </li> --}}
                 <li class="nav-item mt-3">
                     <h6 class="ps-4 ms-2 text-uppercase text-xs font-weight-bolder opacity-6">Akun</h6>
                 </li>
@@ -255,7 +255,7 @@
                 </div>
             </div>
             <div class="row mt-4">
-                <div class="col-lg-6">
+                <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header pb-0 p-3 d-flex" style="justify-content: space-between; align-items: center;">
                             <h6 class="mb-0">Jabatan</h6>
@@ -278,32 +278,6 @@
                                     <div class="d-flex">
                                         <a href="/hapus_jabatan/{{$jabatans->id}}" class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto"><i class="fa fa-trash" aria-hidden="true"></i></a>
                                         <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto" onclick="openModal('{{ $jabatans->namaJabatan }}','{{ $jabatans->id }}')"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
-                                    </div>
-                                </li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="card">
-                        <div class="card-header pb-0 p-3 d-flex justify-between" style="justify-content: space-between; align-items: center;">
-                            <h6 class="mb-0">Navigasi</h6>
-                        </div>
-                        <div class="card-body p-3" style="height: 400px; overflow-y: auto;">
-                            <ul class="list-group">
-                                @foreach ($navigasi as $navigasis )
-                                <li class="list-group-item border-0 d-flex justify-content-between ps-0 mb-2 border-radius-lg">
-                                    <div class="d-flex align-items-center">
-                                        <div class="icon icon-shape icon-sm me-3 bg-gradient-dark shadow text-center">
-                                            <i class="fa fa-location-arrow text-white opacity-10"></i>
-                                        </div>
-                                        <div class="d-flex flex-column">
-                                            <h6 class="mb-1 text-dark text-sm">{{ $navigasis->namaNavigasi }}</h6>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex">
-                                        <button class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto" onclick="openModalNavigasi('{{ $navigasis->namaNavigasi }}','{{ $navigasis->id }}')"><i class="ni ni-bold-right" aria-hidden="true"></i></button>
                                     </div>
                                 </li>
                                 @endforeach

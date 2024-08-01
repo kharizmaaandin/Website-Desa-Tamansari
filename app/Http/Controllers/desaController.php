@@ -79,7 +79,7 @@ class desaController extends Controller
         }
 
         $hapus_visi = visi::where("id",'=',$id)->delete();
-        if($hapus_visi){
+        if($hapus_visi  === true){
             return back()->with("success_toast","berhasil menghapus visi");
         }else{
             return back()->with("error_toast","tidak bisa menghapus visi");

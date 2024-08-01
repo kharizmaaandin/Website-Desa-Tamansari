@@ -117,7 +117,7 @@ class AkunController extends Controller
                 ]);
             // jika proses daftar berhasil maka hapus token
 
-                if($insertData){
+                if($insertData  === true){
                     token::select("token")
                         ->from("tokens")
                         ->where("token","=", $token)
@@ -139,7 +139,7 @@ class AkunController extends Controller
                 ]);
             // jika proses daftar berhasil maka hapus token
 
-                if($insertData){
+                if($insertData  === true){
                     token::select("token")
                         ->from("tokens")
                         ->where("token","=", $token)

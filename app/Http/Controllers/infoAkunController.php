@@ -55,8 +55,9 @@ class infoAkunController extends Controller
         $createToken = DB::table("tokens")->insert([
             'token' => $randomToken,
             'role' => $request->role,
+            'created_at' => Carbon::now(),
         ]);
-        if($createToken){
+        if($createToken === true){
             return back()->with(['success_toast' => "berhasil membuat token"]);
         }else{
             return back()->with(['error_toast' => "gagal membuat token"]);
@@ -104,10 +105,10 @@ class infoAkunController extends Controller
         // cek akun apakah akun dirinya sendiri yang dihapus
         $currentUser = users::where("email", session('email'))->first();
         $isCurrentUser = $currentUser && $currentUser->id == $id;
-
         $hapus_users = users::where("id",'=',$id)->delete();
-        if($hapus_users){
-            if($isCurrentUser){
+        // dd($hapus_users);
+        if($hapus_users  == true){
+            if($isCurrentUser == true){
                 Auth::logout();
                 Session::invalidate();
                 Session::regenerateToken();
