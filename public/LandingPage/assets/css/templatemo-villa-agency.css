@@ -812,13 +812,16 @@ Banner Style
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 220px 20% 320px 20%;
+    padding: 155px 20% 155px 25%;
     margin-top: 0px;
 }
 
 .main-banner .item-1 {
     background-image: url(../images/tm1.png);
+
 }
+
+
 
 .main-banner .item-2 {
     background-image: url(../images/tm2.png);
@@ -1030,11 +1033,11 @@ Video Style
 */
 
 .video {
-    background-image: url(../images/video-bg.jpg);
+    /* background-image: url(../images/video-bg.jpg); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    padding: 100px 0px 250px 0px;
+    padding: 100px 0px 10px 0px;
     position: relative;
 }
 
@@ -1082,7 +1085,7 @@ Fun Facts Style
 
 .fun-facts {
     text-align: center;
-    margin-top: 125px;
+    /* margin-top: 125px; */
 }
 
 .fun-facts .counter {
@@ -1167,7 +1170,7 @@ Best Deal Style
 .best-deal .tabs-content ul.nav-tabs li {
     padding-right: 0px;
     border-right: none;
-    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .best-deal .info-table {

@@ -59,7 +59,7 @@
 
 
     <!-- Header Navigasi Atas -->
-    <div class="sub-header">
+    <!-- <div class="sub-header">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-8">
@@ -71,18 +71,16 @@
                 <div class="col-lg-4 col-md-4">
                     <ul class="social-links">
                         <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <!-- <li><a href="https://x.com/minthu" target="_blank"><i class="fab fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fab fa-linkedin"></i></a></li> -->
                         <li><a href="https://www.instagram.com/pesonatamansariofficial/"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Header Navigasi End -->
 
     <!-- ***** Header Navigasi Atas bagian 2 ***** -->
-    <header class="header-area header-sticky">
+    <header class="header-area header-sticky" style="position: fixed;width: 100%;">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -101,7 +99,9 @@
                             @auth
                             <li style="display: flex; align-items: center;"><a href="/halamanAdmin" style="padding: 0 15px;">{{ session('nama') }}</a></li>
                             @endauth
+                            @if (!session('role'))
                             <li style="display: flex; align-items: center;"><a href="/Masuk" style="padding: 0 15px;">Login</a></li>
+                            @endif
                             <!-- <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li> -->
                         </ul>
                         <a class="menu-trigger" style="text-decoration: none;">
@@ -178,7 +178,7 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Visi
+                  Visi Kepala Desa
                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -196,7 +196,7 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Misi
+                  Misi Kepala Desa
                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -244,8 +244,8 @@
             <div class="row">
                 <div class="col-lg-4 offset-lg-4">
                     <div class="section-heading text-center">
-                        <h6>| Video View</h6>
-                        <h2>Get Closer View & Different Feeling</h2>
+                        <!-- <h6>| Struktur Organisasi</h6> -->
+                        <!-- <h4>| Struktur Organisasi</h4> -->
                     </div>
                 </div>
             </div>
@@ -257,8 +257,8 @@
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="video-frame">
-                        <img src="LandingPage/assets/images/thumbnail.jpeg" alt="" style="" width="100%" height="500px">
-                        <a href="https://youtu.be/lUsa3uU6qvc" target="_blank"><i class="fa fa-play"></i></a>
+                        <!-- <img src="LandingPage/assets/images/thumbnail.jpeg" alt="" style="" width="300px" height="250px"> -->
+                        <!-- <a href="https://youtu.be/lUsa3uU6qvc" target="_blank"><i class="fa fa-play"></i></a> -->
                     </div>
                 </div>
             </div>
@@ -296,8 +296,8 @@
                 <div class="col-lg-12">
                     <div class="tabs-content">
                         <div class="row">
-                            <div class="nav-wrapper ">
-                                <ul class="nav nav-tabs" role="tablist">
+                            <div class="nav-wrapper">
+                                <ul class="nav nav-tabs" role="tablist" style="justify-content: center; margin-left: 25px;margin-right: 20px;" >
                                     <li class="nav-item" role="presentation" >
                                         <button  style="font-size: 30px;border: none;background: none;color: black; font-weight: bold;" type="button" disabled aria-selected="true">Dusun di TamanSari</button>
                                     </li>
@@ -310,28 +310,27 @@
                             </div>
                             <div class="tab-content" id="myTabContent">
                             @foreach ($dusun as $index => $dusuns )
-                                <div class="tab-pane fade @if($index == 0) show active @endif" id="{{$dusuns->namaDusun}}" role="tabpanel" aria-labelledby="{{$dusuns->namaDusun}}-tab">
-                                    <div class="row">
-                                        <div class="col-lg-3" style="margin-left: 50px;">
+                            <div class="tab-pane fade @if($index == 0) show active @endif" id="{{$dusuns->namaDusun}}" role="tabpanel" aria-labelledby="{{$dusuns->namaDusun}}-tab">
+                                    <!-- <h2 style="text-align: center;">{{ $dusuns->nama}}</h2> -->
+                                    <div class="row" style="gap: 1.5rem;">
+                                        <div class="col-lg-3" style="margin-left: 68px;">
                                             <div class="info-table">
                                                 <ul>
-                                                    <li>Jumlah Laki-laki <span>{{ $dusuns->jmlLaki}}</span></li>
-                                                    <li>Jumlah Perempuan <span>{{ $dusuns->jmlPerempuan}}</span></li>
-                                                    <li>Jumlah RT <span>{{ $dusuns->jmlRt}}</span></li>
-                                                    <li>Jumlah RW <span>{{ $dusuns->jmlRw}}</span></li>
+                                                    <!-- <li>Kepala Dusun   <span style="font-size: 15px;">{{ $dusuns->nama}}</span></li> -->
+                                                    <li>Jumlah Laki-laki <span style="font-size: 15px;">{{ $dusuns->jmlLaki}}</span></li>
+                                                    <li>Jumlah Perempuan <span style="font-size: 15px;">{{ $dusuns->jmlPerempuan}}</span></li>
+                                                    <li>Jumlah RT <span style="font-size: 15px;">{{ $dusuns->jmlRt}}</span></li>
+                                                    <li>Jumlah RW <span style="font-size: 15px;">{{ $dusuns->jmlRw}}</span></li>
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="col-lg-6" style="text-align: center;">
-                                            <img src="{{ $dusuns->foto}}" width="50%" style="" class="fotoDusun" height="300px" alt="">
+                                        <div class="col-lg-5" style="text-align: center;">
+                                            <img src="{{ $dusuns->foto}}" width="100%"  class="fotoDusun" height="300px" alt="">
                                         </div>
-                                        <div class="col-lg-2" style="">
-                                            <div style="width: 100%;">
-                                                <h2 style="text-align: center;margin-bottom:10px; ">Kepala Dusun</h2>
-                                            </div>
+                                        <div class="col-lg-2" style="margin-left: 20px;">
                                             <div style="">
-                                                <img class="fotoKadus" src="{{ $dusuns->fotoKadus}}" width="100%" height="250px" alt="">
-                                                <h5 style="text-align: center; margin-top: 30px;font-weight: normal">{{ $dusuns->nama }}</h5>
+                                                <img class="fotoKadus" src="{{ $dusuns->fotoKadus}}" width="100%" height="300px" alt="">
+                                                <p style="text-align: center;margin-top: 20px; color: black; font-weight: bold;">{{$dusuns->nama}}</p>
                                             </div>
                                         </div>
                                     </div>
