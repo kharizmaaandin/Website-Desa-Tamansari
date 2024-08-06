@@ -100,8 +100,10 @@
                             <li style="display: flex; align-items: center;"><a href="" style="padding: 0 15px;">Informasi Publik</a></li>
                             @auth
                             <li style="display: flex; align-items: center;"><a href="/halamanAdmin" style="padding: 0 15px;">{{ session('nama') }}</a></li>
-                            @endauth
+                            @else
                             <li style="display: flex; align-items: center;"><a href="/Masuk" style="padding: 0 15px;">Login</a></li>
+
+                            @endauth
                             <!-- <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li> -->
                         </ul>
                         <a class="menu-trigger" style="text-decoration: none;">
@@ -178,7 +180,7 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Visi
+                  Visi Kepala Desa
                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
@@ -196,7 +198,7 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Misi
+                  Misi Kepala Desa
                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
@@ -274,6 +276,12 @@
                             <div class="col-lg-12">
                                 <h3>Struktur Organisasi</h3>
                             </div>
+                            @php
+                            $struktur = $struktur->sortBy(function($item) {
+                                return $item->namaJabatan == 'kepala desa' ? 0 : 1;
+                            });
+                            @endphp
+                            
                             @foreach ($struktur as $strukturs )
                             <div class="col-lg-2" style="margin-top: 40px" >
                                 <div class="strukturList">
@@ -290,7 +298,9 @@
             </div>
         </div>
     </div>
-
+    <div class="text-center">
+        <h4>Dusun di Tamansari</h4>
+    </div>
     <div class="section best-deal">
             <div class="row">
                 <div class="col-lg-12">
@@ -298,9 +308,9 @@
                         <div class="row">
                             <div class="nav-wrapper ">
                                 <ul class="nav nav-tabs" role="tablist">
-                                    <li class="nav-item" role="presentation" >
+                                    {{-- <li class="nav-item" role="presentation" >
                                         <button  style="font-size: 30px;border: none;background: none;color: black; font-weight: bold;" type="button" disabled aria-selected="true">Dusun di TamanSari</button>
-                                    </li>
+                                    </li> --}}
                                     @foreach ($dusun as $index => $dusuns )
                                         <li class="nav-item" role="presentation" style="margin-top: 10px;">
                                             <button class="nav-link @if($index == 0) show active @endif" id="{{$dusuns->namaDusun}}-tab" data-bs-toggle="tab" data-bs-target="#{{$dusuns->namaDusun}}" type="button" role="tab" aria-controls="{{$dusuns->namaDusun}}" aria-selected="true">{{$dusuns->namaDusun}}</button>

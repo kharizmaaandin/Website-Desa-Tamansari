@@ -109,7 +109,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/keluar">
                         <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="fa fa-sign-out text-dark text-sm opacity-10"></i>
+                            <img src="icon/logout.png" width="17px" height="17px" alt="">
                         </div>
                         <span class="nav-link-text ms-1">Logout</span>
                     </a>
@@ -117,7 +117,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/">
                         <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="fa fa-sign-out text-dark text-sm opacity-10"></i>
+                            <img src="icon/back.png" width="17px" height="17px" alt="">
                         </div>
                         <span class="nav-link-text ms-1">Halaman Utama</span>
                     </a>
@@ -179,11 +179,11 @@
                                             <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Deskripsi Desa</th>
                                             <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2">
                                                 Visi 
-                                                <button data-bs-toggle="modal" data-bs-target="#formAddVisi" class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto btn-tambah" title="tambah visi" style="width: 30px;margin-left: 20px;" ><i class="fa fa-plus"></i></button>
+                                                <button data-bs-toggle="modal" data-bs-target="#formAddVisi" class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto btn-tambah" title="tambah visi" style="width: 30px;margin-left: 20px;" ><img src="icon/tambah.png" width="17px" height="17px" alt=""></button>
 
                                             </th>
                                             <th class="text-center text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Misi
-                                                <button data-bs-toggle="modal" data-bs-target="#formAddMisi" class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto btn-tambah" title="tambah misi" style="width: 30px;margin-left: 20px;" ><i class="fa fa-plus"></i></button>
+                                                <button data-bs-toggle="modal" data-bs-target="#formAddMisi" class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto btn-tambah" title="tambah misi" style="width: 30px;margin-left: 20px;" ><img src="icon/tambah.png" width="17px" height="17px" alt=""></button>
                                             </th>
                                             <th class="text-center text-secondary opacity-7"></th>
                                         </tr>
@@ -208,8 +208,8 @@
                                                         @foreach ($visi as $visis )
                                                         <li style="display: flex;">
                                                             <p style="margin-right: 20px;">{{ $visis->visi}}</p>  
-                                                            <a href="/hapus_visi/{{$visis->id}}" class="btn btn-link btn-icon-only btDDDn-rounded btn-sm text-dark icon-move-right my-auto" ><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                                            <button onclick="openModal('{{ $visis->visi }}','{{ $visis->id }}')" class="btn btn-link btn-icon-only btDDDn-rounded btn-sm text-dark icon-move-right my-auto" ><i class="fa fa-pen" aria-hidden="true"></i></button>
+                                                            <a href="/hapus_visi/{{$visis->id}}" class="btn btn-link btn-icon-only btDDDn-rounded btn-sm text-dark icon-move-right my-auto" ><img src="icon/trash.png" width="17px" height="17px" alt=""></a>
+                                                            <button onclick="openModal('{{ $visis->visi }}','{{ $visis->id }}')" class="btn btn-link btn-icon-only btDDDn-rounded btn-sm text-dark icon-move-right my-auto" ><img src="icon/edit.png" width="17px" height="17px" alt=""></button>
                                                         </li>
                                                         @endforeach
                                                     </ul>
@@ -220,15 +220,15 @@
                                                     @foreach ($misi as $misis )
                                                     <li style="display: flex;">
                                                         <p style="margin-right: 20px">{{ $misis->misi}}</p>
-                                                        <a href="/hapus_misi/{{$misis->id}}" class="btn btn-link btn-icon-only btDDDn-rounded btn-sm text-dark icon-move-right my-auto" ><i class="fa fa-trash" aria-hidden="true"></i></a>
-                                                        <button onclick="openModalMisi('{{ $misis->misi }}','{{ $misis->id }}')" class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto" ><i class="fa fa-pen" aria-hidden="true"></i></button>
+                                                        <a href="/hapus_misi/{{$misis->id}}" class="btn btn-link btn-icon-only btDDDn-rounded btn-sm text-dark icon-move-right my-auto" ><img src="icon/trash.png" width="17px" height="17px" alt=""></a>
+                                                        <button onclick="openModalMisi('{{ $misis->misi }}','{{ $misis->id }}')" class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto" ><img src="icon/edit.png" width="17px" height="17px" alt=""></button>
                                                     </li>
                                                     
                                                     @endforeach
                                                 </ul>
                                             </td>
                                             <td  style="text-align: center;">
-                                                <button onclick="openModalDesa('{{ $deskripsi }}','{{ $foto }}','{{$id}}')" class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto" ><i class="fa fa-pen" aria-hidden="true"></i></button>
+                                                <button onclick="openModalDesa('{{ $deskripsi }}','{{ $foto }}','{{$id}}')" class="btn btn-link btn-icon-only btn-rounded btn-sm text-dark icon-move-right my-auto" ><img src="icon/edit.png" width="17px" height="17px" alt=""></button>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -273,9 +273,9 @@
                                                 <p class="text-sm text-center font-weight-bold mb-0">{{ $layanans->deskripsiLayanan }}</p>
                                             </td>
                                             <td class="align-middle text-center">
-                                                <a href="/hapus_layanan/{{$layanans->id}}"><i class="fa fa-trash" style="font-size: 12px;"></i></a>
+                                                <a href="/hapus_layanan/{{$layanans->id}}"><img src="icon/trash.png" width="17px" height="17px" alt=""></a>
                                                 <button onclick="openModalLayanan('{{ $layanans->namaLayanan }}', '{{ $layanans->deskripsiLayanan }}', '{{ $layanans->id }}')" class="btn btn-link text-secondary mb-0">
-                                                    <i class="fa fa-pen text-xs"></i>
+                                                    <img src="icon/edit.png" width="17px" height="17px" alt="">
                                                 </button>
                                             </td>
                                         </tr>
@@ -314,7 +314,7 @@
                                             </td>
                                             <td class="align-middle text-center">
                                                 <button onclick="openModalLokasi('{{$lokasi->id}}', '{{$lokasi->linkLokasi}}')" class="btn btn-link text-secondary mb-0">
-                                                    <i class="fa fa-pen text-xs"></i>
+                                                    <img src="icon/edit.png" width="17px" height="17px" alt="">
                                                 </button>
                                             </td>
                                         </tr>

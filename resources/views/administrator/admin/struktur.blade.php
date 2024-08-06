@@ -105,7 +105,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/keluar">
                         <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="fa fa-sign-out text-dark text-sm opacity-10"></i>
+                            <img src="icon/logout.png" width="17px" height="17px" alt="">
                         </div>
                         <span class="nav-link-text ms-1">Logout</span>
                     </a>
@@ -113,7 +113,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/">
                         <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="fa fa-sign-out text-dark text-sm opacity-10"></i>
+                            <img src="icon/back.png" width="17px" height="17px" alt="">
                         </div>
                         <span class="nav-link-text ms-1">Halaman Utama</span>
                     </a>
@@ -203,9 +203,9 @@
                                                 <p class="text-sm text-center font-weight-bold mb-0">{{$strukturs->namaJabatan}}</p>
                                             </td>
                                             <td class="align-middle text-center">
-                                                <a href="/hapus_struktur/{{$strukturs->id}}" class="btn btn-link btn-icon-only btDDDn-rounded btn-sm text-dark icon-move-right my-auto" ><i class="fa fa-trash" aria-hidden="true"></i></a>
+                                                <a href="/hapus_struktur/{{$strukturs->id}}" class="btn btn-link btn-icon-only btDDDn-rounded btn-sm text-dark icon-move-right my-auto" ><img src="icon/trash.png" width="17px" height="17px" alt=""></a>
                                                 <button onclick="openModal('{{$strukturs->nama}}', '{{$strukturs->jabatan}}', '{{$strukturs->namaJabatan}}','{{$strukturs->foto}}', '{{$strukturs->id}}')" class="btn btn-link text-secondary mb-0">
-                                                    <i class="fa fa-pen text-xs"></i>
+                                                    <img src="icon/edit.png" width="17px" height="17px" alt="">
                                                 </button>
                                             </td>
                                         </tr>
