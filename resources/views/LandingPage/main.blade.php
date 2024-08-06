@@ -280,7 +280,7 @@
                             </div>
                             @php
                             $struktur = $struktur->sortBy(function($item) {
-                                return $item->namaJabatan == 'kepala desa' ? 0 : 1;
+                                return $item->namaJabatan == 'Kepala Desa' ? 0 : 1;
                             });
                             @endphp
                             
