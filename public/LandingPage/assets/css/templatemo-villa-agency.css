@@ -821,7 +821,7 @@ Banner Style
 }
 
 .main-banner .item-2 {
-    background-image: url(../images/tm2.png);
+    background-image: url(../images/tm4.jpeg);
     padding: 155px 20% 260px 25%;
 }
 
@@ -1136,7 +1136,7 @@ Best Deal Style
 
 .best-deal {
     background-color: #fafafa;
-    padding: 100px 0px;
+    /* padding: 100px 0px; */
 }
 
 .best-deal .tab-content img {}
