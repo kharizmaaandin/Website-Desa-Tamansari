@@ -100,17 +100,9 @@
                             <li style="display: flex; align-items: center;"><a href="#informasi-publik" style="padding: 0 15px;">Informasi Publik</a></li>
                             @auth
                             <li style="display: flex; align-items: center;"><a href="/halamanAdmin" style="padding: 0 15px;">{{ session('nama') }}</a></li>
-<<<<<<< HEAD
                             @else
                             <li style="display: flex; align-items: center;"><a href="/Masuk" style="padding: 0 15px;">Login</a></li>
-
                             @endauth
-=======
-                            @endauth
-                            @if (!session('role'))
-                            <li style="display: flex; align-items: center;"><a href="/Masuk" style="padding: 0 15px;">Login</a></li>
-                            @endif
->>>>>>> 8c779832822f3e59716da11e582b9654b08fb709
                             <!-- <li><a href="#"><i class="fa fa-calendar"></i> Schedule a visit</a></li> -->
                         </ul>
                         <a class="menu-trigger" style="text-decoration: none;">
@@ -187,13 +179,8 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-<<<<<<< HEAD
                   Visi Kepala Desa
                 </button>
-=======
-                                    Visi Kepala Desa
-                                </button>
->>>>>>> 8c779832822f3e59716da11e582b9654b08fb709
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
@@ -210,13 +197,8 @@
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-<<<<<<< HEAD
                   Misi Kepala Desa
                 </button>
-=======
-                                    Misi Kepala Desa
-                                </button>
->>>>>>> 8c779832822f3e59716da11e582b9654b08fb709
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
@@ -315,42 +297,6 @@
             </div>
         </div>
     </div>
-<<<<<<< HEAD
-    <div class="text-center">
-        <h4>Dusun di Tamansari</h4>
-    </div>
-    <div class="section best-deal">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="tabs-content">
-                        <div class="row">
-                            <div class="nav-wrapper ">
-                                <ul class="nav nav-tabs" role="tablist">
-                                    {{-- <li class="nav-item" role="presentation" >
-                                        <button  style="font-size: 30px;border: none;background: none;color: black; font-weight: bold;" type="button" disabled aria-selected="true">Dusun di TamanSari</button>
-                                    </li> --}}
-                                    @foreach ($dusun as $index => $dusuns )
-                                        <li class="nav-item" role="presentation" style="margin-top: 10px;">
-                                            <button class="nav-link @if($index == 0) show active @endif" id="{{$dusuns->namaDusun}}-tab" data-bs-toggle="tab" data-bs-target="#{{$dusuns->namaDusun}}" type="button" role="tab" aria-controls="{{$dusuns->namaDusun}}" aria-selected="true">{{$dusuns->namaDusun}}</button>
-                                        </li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                            <div class="tab-content" id="myTabContent">
-                            @foreach ($dusun as $index => $dusuns )
-                                <div class="tab-pane fade @if($index == 0) show active @endif" id="{{$dusuns->namaDusun}}" role="tabpanel" aria-labelledby="{{$dusuns->namaDusun}}-tab">
-                                    <div class="row">
-                                        <div class="col-lg-3" style="margin-left: 50px;">
-                                            <div class="info-table">
-                                                <ul>
-                                                    <li>Jumlah Laki-laki <span>{{ $dusuns->jmlLaki}}</span></li>
-                                                    <li>Jumlah Perempuan <span>{{ $dusuns->jmlPerempuan}}</span></li>
-                                                    <li>Jumlah RT <span>{{ $dusuns->jmlRt}}</span></li>
-                                                    <li>Jumlah RW <span>{{ $dusuns->jmlRw}}</span></li>
-                                                </ul>
-                                            </div>
-=======
-
     <div class="section best-deal" id="informasi-publik">
         <div style="text-align: center; margin-bottom: 10px;">
             <button style="font-size: 30px; border: none; background: none; color: black; font-weight: bold;" type="button" disabled aria-selected="true">Dusun di TamanSari</button>
@@ -383,7 +329,6 @@
                                                 <li>Jumlah RT <span style="font-size: 15px;">{{ $dusuns->jmlRt}}</span></li>
                                                 <li>Jumlah RW <span style="font-size: 15px;">{{ $dusuns->jmlRw}}</span></li>
                                             </ul>
->>>>>>> 8c779832822f3e59716da11e582b9654b08fb709
                                         </div>
                                     </div>
                                     <div class="col-lg-5" style="text-align: center;">
@@ -434,9 +379,8 @@
                 @endforeach
             </div>
             <div class="btn-carousel" style="display: flex; justify-content: space-between; ">
-                <button class="btn-slide" id="btn-slide-left" onclick="plusIndeks(-1)">
-                    << /button>
-                        <button class="btn-slide" id="btn-slide-right" onclick="plusIndeks(1)">></button>
+                <button class="btn-slide" id="btn-slide-left" onclick="plusIndeks(-1)"><</button>
+                <button class="btn-slide" id="btn-slide-right" onclick="plusIndeks(1)">></button>
             </div>
         </div>
     </div>
