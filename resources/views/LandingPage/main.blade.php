@@ -97,7 +97,9 @@
                         <ul class="nav" style="list-style: none; display: flex; align-items: center; margin: 0; padding: 0;">
                             <li style="display: flex; align-items: center;"><a href="#profil-desa" class="active" style="padding: 0 15px;">Profil Desa</a></li>
                             <li style="display: flex; align-items: center;"><a href="#pemerintahan" style="padding: 0 15px;">Pemerintahan</a></li>
-                            <li style="display: flex; align-items: center;"><a href="#informasi-publik" style="padding: 0 15px;">Informasi Publik</a></li>
+                            <li style="display: flex; align-items: center;"><a href="#informasi-publik" style="padding: 0 15px;">Dusun</a></li>
+                            <li style="display: flex; align-items: center;"><a href="#layanan" style="padding: 0 15px;">Layanan</a></li>
+                            <li style="display: flex; align-items: center;"><a href="#lokasi" style="padding: 0 15px;">Lokasi</a></li>
                             @auth
                             <li style="display: flex; align-items: center;"><a href="/halamanAdmin" style="padding: 0 15px;">{{ session('nama') }}</a></li>
                             @else
@@ -127,7 +129,7 @@
             <div class="item item-1">
                 <div class="header-text">
                     <span class="category">Tamansari, <em>Kerjo</em></span>
-                    <h2><br>Web Desa Tamansari</h2>
+                    <h2><br>Web Desa Tamansari<br><br></h2>
                 </div>
             </div>
             <div class="item item-2">
@@ -160,7 +162,7 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="section-heading" style="font-size: 15px;">
-                        <h6>Tentang Kami</h6>
+                        <h6>| Profil Desa</h6>
                         <h3>Desa Tamansari <br> Kecamatan Kerjo</h3>
                     </div>
                     <div class="accordion" id="accordionExample">
@@ -273,6 +275,7 @@
                     <div class="wrapper">
                         <div class="row">
                             <div class="col-lg-12">
+                            <h6>| Pemerintahan</h6>
                                 <h3>Struktur Organisasi</h3>
                             </div>
                             @php
@@ -297,10 +300,11 @@
             </div>
         </div>
     </div>
-    <div style="text-align: center; margin-top: 30px;">
+    <div style="text-align: center; margin-top: 30px; margin-bottom: 30px;">
+    <h6>| Dusun</h6>
         <button style="font-size: 30px; border: none; background: none; color: black; font-weight: bold;" type="button" disabled aria-selected="true">Dusun di TamanSari</button>
     </div>
-    <div class="section best-deal" id="informasi-publik" style="">
+    <div class="section best-deal" id="informasi-publik" style="margin-top:150px;">
         <div class="row">
             <div class="col-lg-12">
                 <div class="tabs-content">
@@ -350,7 +354,7 @@
 
 
 
-    <div class="properties section">
+    <div class="properties section" id="layanan">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 offset-lg-4">
@@ -382,13 +386,13 @@
         </div>
     </div>
 
-    <div class="contact section">
+    <div class="contact section" id="lokasi">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 offset-lg-4">
                     <div class="section-heading text-center">
-                        <h6>| Contact Us</h6>
-                        <h2>Get In Touch With Our Agents</h2>
+                        <h6>| Lokasi</h6>
+                        <h2>Lokasi Desa Tamansari</h2>
                     </div>
                 </div>
             </div>
