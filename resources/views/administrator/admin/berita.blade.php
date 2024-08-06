@@ -108,7 +108,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/keluar">
                         <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="fa fa-sign-out text-dark text-sm opacity-10"></i>
+                            <img src="icon/logout.png" width="17px" height="17px" alt="">
                         </div>
                         <span class="nav-link-text ms-1">Logout</span>
                     </a>
@@ -116,7 +116,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/">
                         <div class="icon icon-shape icon-sm border-radius-md text-center me-2 d-flex align-items-center justify-content-center">
-                            <i class="fa fa-sign-out text-dark text-sm opacity-10"></i>
+                            <img src="icon/back.png" width="17px" height="17px" alt="">
                         </div>
                         <span class="nav-link-text ms-1">Halaman Utama</span>
                     </a>
