@@ -812,23 +812,22 @@ Banner Style
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 155px 20% 260px 25%;
     margin-top: 0px;
 }
 
 .main-banner .item-1 {
     background-image: url(../images/tm1.png);
-
+    padding: 225px 20% 260px 25%;
 }
-
-
 
 .main-banner .item-2 {
     background-image: url(../images/tm2.png);
+    padding: 155px 20% 260px 25%;
 }
 
 .main-banner .item-3 {
     background-image: url(../images/tm3.png);
+    padding: 155px 20% 260px 25%;
 }
 
 .main-banner .item span.category {

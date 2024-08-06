@@ -297,16 +297,14 @@
             </div>
         </div>
     </div>
-    <div class="section best-deal" id="informasi-publik">
-        <div style="text-align: center; margin-bottom: 10px;">
-            <button style="font-size: 30px; border: none; background: none; color: black; font-weight: bold;" type="button" disabled aria-selected="true">Dusun di TamanSari</button>
-        </div>
+    <div style="text-align: center; margin-top: 30px;">
+        <button style="font-size: 30px; border: none; background: none; color: black; font-weight: bold;" type="button" disabled aria-selected="true">Dusun di TamanSari</button>
+    </div>
+    <div class="section best-deal" id="informasi-publik" style="">
         <div class="row">
-
             <div class="col-lg-12">
                 <div class="tabs-content">
                     <div class="row">
-
                         <div class="nav-wrapper">
                             <ul class="nav nav-tabs" role="tablist" style="justify-content: center; margin-left: 25px; margin-right: 20px;">
                                 @foreach ($dusun as $index => $dusuns)
@@ -316,7 +314,6 @@
                                 @endforeach
                             </ul>
                         </div>
-
                         <div class="tab-content" id="myTabContent">
                             @foreach ($dusun as $index => $dusuns)
                             <div class="tab-pane fade @if($index == 0) show active @endif" id="{{$dusuns->namaDusun}}" role="tabpanel" aria-labelledby="{{$dusuns->namaDusun}}-tab">
