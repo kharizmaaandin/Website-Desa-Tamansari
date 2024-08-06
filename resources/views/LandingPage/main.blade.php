@@ -127,7 +127,7 @@
             <div class="item item-1">
                 <div class="header-text">
                     <span class="category">Tamansari, <em>Kerjo</em></span>
-                    <h2><br>Web Desa Tamansari</h2>
+                    <h2><br>Web Desa Tamansari <br><br></h2>
                 </div>
             </div>
             <div class="item item-2">
@@ -285,9 +285,9 @@
                             <div class="col-lg-2" style="margin-top: 40px">
                                 <div class="strukturList">
                                     <div style="margin-bottom: 20px;">
-                                        <img src="{{$strukturs->foto}}" style="width: 100%; height: 200px;  border-radius: 20px;" alt="">
+                                        <img class="gambar_struktur" src="{{$strukturs->foto}}" style="  border-radius: 20px;" alt="">
                                     </div>
-                                    <p class="count-text "><b>{{$strukturs->nama}}</b> <br>{{$strukturs->namaJabatan}}</p>
+                                    <p class="count-text"><b>{{$strukturs->nama}}</b> <br>{{$strukturs->namaJabatan}}</p>
                                 </div>
                             </div>
                             @endforeach
@@ -350,7 +350,7 @@
 
 
 
-    <div class="properties section">
+    <div class="properties section" id="layanan">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4 offset-lg-4">
