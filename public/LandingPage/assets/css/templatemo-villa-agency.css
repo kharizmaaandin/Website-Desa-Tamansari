@@ -238,6 +238,10 @@ body {
 }
 
 .section-heading h3 {
+    color: #1e1e1e;
+}
+
+.section-heading text-center h3  {
     color: #ffffff;
 }
 
@@ -1917,7 +1921,7 @@ body {
 @media (min-width: 1200px) {
     .gambar_struktur {
         width: 100%;
-        height: 250px;
+        height: 200px;
     }
 }
 

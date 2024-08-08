@@ -416,7 +416,7 @@
                         <div class="col-lg-6">
                             <div class="item email">
                                 <img src="LandingPage/assets/images/email-icon.png" alt="" style="max-width: 52px;">
-                                <h6>info@villa.co<br><span>Business Email</span></h6>
+                                <h6>desatamansari16@gmail.com<br><span>Business Email</span></h6>
                             </div>
                         </div>
                     </div>
