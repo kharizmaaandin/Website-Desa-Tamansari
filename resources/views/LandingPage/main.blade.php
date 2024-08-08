@@ -360,7 +360,7 @@
                 <div class="col-lg-4 offset-lg-4">
                     <div class="section-heading text-center">
                         <h6>| Layanan</h6>
-                        <h2>Pelayanan Desa Tamansari</h2>
+                        <h3>Pelayanan Desa Tamansari</h3>
                     </div>
                 </div>
             </div>
@@ -392,7 +392,7 @@
                 <div class="col-lg-4 offset-lg-4">
                     <div class="section-heading text-center">
                         <h6>| Lokasi</h6>
-                        <h2>Lokasi Desa Tamansari</h2>
+                        <h3>Lokasi Desa Tamansari</h3>
                     </div>
                 </div>
             </div>

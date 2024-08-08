@@ -159,9 +159,15 @@ h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
     color: #1e1e1e;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-weight: 700;
+}
+
+h6 {
+    color: #f35525;
     margin-top: 0px;
     margin-bottom: 0px;
     font-weight: 700;
@@ -225,10 +231,14 @@ body {
 }
 
 .section-heading h6 {
-    color: #ee626b;
+    color: #f35525;
     font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+.section-heading h3 {
+    color: #ffffff;
 }
 
 .icon-button a {
@@ -816,7 +826,7 @@ Banner Style
 }
 
 .main-banner .item-1 {
-    background-image: url(../images/tm1.png);
+    background-image: url(../images/tm_baldes.png);
     padding: 155px 20% 260px 25%;
 }
 
