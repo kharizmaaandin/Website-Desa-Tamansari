@@ -600,7 +600,7 @@ Header Style
     width: 32px;
     height: 40px;
     text-indent: -9999em;
-    z-index: 99;
+    z-index: 9999; /* Pastikan ini berada di atas elemen lain */
     right: 20px;
     display: none;
 }
@@ -711,7 +711,7 @@ Header Style
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
     .background-header .main-nav {
         box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.15);
         border-radius: 0px 0px 25px 25px;
@@ -765,6 +765,9 @@ Header Style
     .header-area.header-sticky .nav li.search-icon a {
         width: 100%;
     }
+    .header-area .nav {
+        display: none; /* Menyembunyikan navbar secara default */
+    }
     .header-area .nav li:last-child a {
         background-color: transparent !important;
         font-weight: 300 !important;
@@ -786,7 +789,13 @@ Header Style
         display: block !important;
     }
     .header-area .main-nav {
-        overflow: hidden;
+        position: absolute;
+        top: 60px; /* Adjust based on header height */
+        right: 0;
+        background-color: #fff; /* Add background to ensure visibility */
+        width: 100%;
+        display: none; /* Initially hidden */
+        z-index: 9998;
     }
     .header-area .main-nav .nav {
         float: none;
@@ -1865,6 +1874,8 @@ body {
     }
     .best-deal .tab-content img {
         padding: 0px;
+        weight: 50%;
+        height: 300px;
     }
     .best-deal .tabs-content h4 {
         margin-top: 45px;

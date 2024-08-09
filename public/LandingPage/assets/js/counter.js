@@ -102,5 +102,6 @@
       options = $.extend({}, options || {}, $this.data("countToOptions") || {});
       $this.countTo(options);
     }
+    
   });
   
