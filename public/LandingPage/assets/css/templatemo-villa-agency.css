@@ -1871,11 +1871,12 @@ body {
     }
     .best-deal .info-table {
         margin-bottom: 45px;
+        display: inline-block;
+        align-items: center;
     }
     .best-deal .tab-content img {
         padding: 0px;
-        weight: 50%;
-        height: 300px;
+        width: auto;
     }
     .best-deal .tabs-content h4 {
         margin-top: 45px;
