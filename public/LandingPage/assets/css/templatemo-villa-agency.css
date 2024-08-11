@@ -512,7 +512,6 @@ Header Style
 
 .header-area .main-nav ul.nav {
     flex-basis: 100%;
-    margin-top: 30px;
     justify-content: right;
     -webkit-transition: all 0.3s ease 0s;
     -moz-transition: all 0.3s ease 0s;
@@ -607,10 +606,6 @@ Header Style
 
 .background-header .main-nav .menu-trigger {
     top: 22px;
-}
-
-.background-header .main-nav ul.nav {
-    margin-top: 20px;
 }
 
 .header-area .main-nav .menu-trigger span,
@@ -790,7 +785,6 @@ Header Style
     }
     .header-area .main-nav {
         position: absolute;
-        top: 60px; /* Adjust based on header height */
         right: 0;
         background-color: #fff; /* Add background to ensure visibility */
         width: 100%;
@@ -1802,6 +1796,7 @@ body {
     .header-area .main-nav .logo h1 {
         line-height: 80px !important;
     }
+
     .best-deal .tabs-content .nav-link {
         font-size: 14px;
         padding: 0px 15px;
@@ -1959,4 +1954,20 @@ body {
 .fotoKadus {
     cursor: pointer;
     filter: drop-shadow(0px 20px 20px rgb(199, 199, 199));
+}
+
+@media (max-width: 920px) {
+    .nav {
+        display: none;
+    }
+}
+
+@media (min-width: 920px) {
+    .nav {
+        list-style: none;
+        display: flex;
+        align-content: center;
+        margin: 0;
+        padding: 0;
+    }
 }

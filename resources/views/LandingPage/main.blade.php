@@ -86,7 +86,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <nav class="main-nav" style="display: flex; align-items: center; justify-content: space-between; height: 100px;">
+                    <nav class="main-nav" style="display: flex; align-items: center; justify-content: space-between; height: 100%;">
                         <!-- ***** Logo Start ***** -->
                         <a href="" class="logo" style="display: flex; align-items: center; text-decoration: none;">
                             <img src="LandingPage/assets/images/logo-tamansari.PNG" alt="Logo" style="height: 40px; width: auto; margin-right: 10px;">
@@ -94,7 +94,7 @@
                         </a>
                         <!-- ***** Logo End ***** -->
                         <!-- ***** Menu Start ***** -->
-                        <ul class="nav" style="list-style: none; display: flex; align-items: center; margin: 0; padding: 0;">
+                        <ul class="nav">
                             <li style="display: flex; align-items: center;"><a href="#profil-desa" class="active" style="padding: 0 15px;">Profil Desa</a></li>
                             <li style="display: flex; align-items: center;"><a href="#pemerintahan" style="padding: 0 15px;">Pemerintahan</a></li>
                             <li style="display: flex; align-items: center;"><a href="#informasi-publik" style="padding: 0 15px;">Dusun</a></li>
@@ -157,7 +157,7 @@
                 <div class="col-lg-4">
                     <div class="left-image">
                         <img src="{{ $fotoDesa }}" style="max-width: 100%;" height="100%" alt="">
-                        <a href=""><img src="LandingPage/assets/images/featured-icon.png" alt="" style="max-width: 60px; padding: 0px;"></a>
+                        <!-- <a href=""><img src="LandingPage/assets/images/featured-icon.png" alt="" style="max-width: 60px; padding: 0px;"></a> -->
                     </div>
                 </div>
                 <div class="col-lg-5">
